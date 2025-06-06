@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import downArrow from "../assets/images/icon-arrow.svg";
+import { useState } from "react";
 
 const faqData = [
   {
@@ -34,9 +33,12 @@ const Faq = () => {
   return (
     <section className="faq-container flex flex-col justify-center items-center text-center w-full gap-6 px-4 py-12 max-w-3xl mx-auto">
       <div>
-        <h2 className="text-3xl font-semibold mb-4">Frequently Asked Questions</h2>
+        <h2 className="text-3xl font-semibold mb-4">
+          Frequently Asked Questions
+        </h2>
         <p className="text-neutral-blue-950/50 text-[15px]">
-          Here are some of our FAQs. If you have any other questions, please feel free to email us.
+          Here are some of our FAQs. If you have any other questions, please
+          feel free to email us.
         </p>
       </div>
 
@@ -45,17 +47,21 @@ const Faq = () => {
           <div key={index} className="mb-4 border-b border-neutral-blue-950/15">
             <button
               onClick={() => toggleAnswer(index)}
-              className="flex justify-between items-center w-full py-4 text-neutral-blue-950 font-normal text-[15px]"
+              className="flex justify-between items-center w-full py-4 text-neutral-blue-950 font-normal text-[15px] hover:text-primary-red-400"
             >
               {item.question}
-              <img
-                src={downArrow}
-                alt="toggle arrow"
-                className={`transition-transform duration-300 ${activeIndex === index ? "rotate-180" : ""}`}
+              <i
+                className={`fa-solid fa-chevron-down transition-transform duration-300 cursor-pointer ${
+                  activeIndex === index
+                    ? "text-primary-red-400 rotate-180"
+                    : "text-primary-blue-600"
+                }`}
               />
             </button>
             {activeIndex === index && (
-              <p className="pb-4 text-neutral-blue-950/70 text-[15px]">{item.answer}</p>
+              <p className="pb-4 text-neutral-blue-950/70 text-[15px]">
+                {item.answer}
+              </p>
             )}
           </div>
         ))}

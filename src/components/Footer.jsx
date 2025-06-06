@@ -6,10 +6,10 @@ const Footer = () => {
   return (
     <footer className="flex flex-col justify-center items-center mt-10 w-full">
       <ContactUs />
-      <div className="footer flex flex-col justify-center items-center gap-8 bg-neutral-blue-950 text-white w-full px-4 py-12">
+      <div className="footer flex flex-col justify-center items-center gap-8 bg-neutral-blue-950 text-white w-full px-4 py-12  md:flex-row md:justify-around">
         <img src={logo} alt="bookmark logo" />
         <nav className="links">
-          <ul className="flex flex-col justify-around items-center gap-4">
+          <ul className="flex flex-col justify-around items-center gap-4 md:flex-row md:justify-around md:gap-12">
             {links.map((link) => (
               <li key={link}>
                 <a

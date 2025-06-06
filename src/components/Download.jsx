@@ -54,7 +54,7 @@ const Download = () => {
               Minimum version {card.version}
             </span>
             <img src={dots} alt="background dots" />
-            <button className="py-2 px-8 rounded-md bg-primary-blue-600 text-white font-medium text-[15px] shadow">
+            <button className="py-2 px-8 rounded-md bg-primary-blue-600 text-white font-medium text-[15px] shadow hover:bg-transparent hover:border hover:border-primary-blue-600 hover:text-primary-blue-600">
               Add & Install Extension
             </button>
           </article>

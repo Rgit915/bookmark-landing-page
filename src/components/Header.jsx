@@ -11,16 +11,16 @@ const Header = () => {
   };
   const links = ["Features", "Pricing", "Contact"];
   return (
-    <header className="header relative z-50 w-full px-2 py-6">
+    <header className="header relative z-50 w-full bg-white px-2 py-6">
       {/* Desktop nav */}
-      <div className="hidden lg:flex justify-between items-center uppercase w-full">
+      <div className="hidden justify-between items-center uppercase w-full lg:flex ">
         <img src={logo} alt="Bookmark logo" className="h-6" />
-        <ul className="flex justify-around items-center gap-4">
+        <ul className="flex justify-around items-end gap-4">
           {links.map((link) => (
             <li key={link}>
               <a
                 href="#"
-                className=" text-xl hover:text-primary-red-400 cursor-pointer shadow-[0px_8px_8px_-4px_hsla(231,_58%,_55%,_0.05)]"
+                className=" text-xl hover:text-primary-red-400 cursor-pointer"
               >
                 {link}
               </a>
