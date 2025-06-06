@@ -67,7 +67,7 @@ const Faq = () => {
         ))}
       </div>
 
-      <button className="mt-4 bg-primary-blue-600 text-white py-2 px-6 rounded hover:bg-primary-red-300">
+      <button className="mt-4 bg-primary-blue-600 text-white py-2 px-6 rounded hover:bg-transparent hover:text-primary-blue-600 hover:border hover:border-primary-blue-600">
         More Info
       </button>
     </section>

@@ -88,7 +88,7 @@ const Features = () => {
           <p className="text-neutral-blue-950/50 text-[15px] text-center mb-6 md:text-left">
             {slides[activeTab].content.description}
           </p>
-          <button className="bg-primary-blue-600 text-white text-[15px] px-6 py-2 rounded-md hover:bg-primary-red-300">
+          <button className="bg-primary-blue-600 text-white text-[15px] px-6 py-2 rounded-md hover:bg-transparent hover:text-primary-blue-600 hover:border hover:border-primary-blue-600">
             More Info
           </button>
         </div>
