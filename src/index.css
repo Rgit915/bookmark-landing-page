@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* Fonts */
+  --font-rubik-sans: "Rubik", sans-serif;
+
+  /* Colors */
+  --color-primary-blue-600: hsl(231, 69%, 60%);
+  --color-primary-red-400: hsl(0, 94%, 66%);
+  --color-neutral-grey-50: hsl(0, 0%, 97%);
+  --color-neutral-blue-950: hsl(229, 31%, 21%);
+  --color-divider-primary-light: hsla(231, 58%, 55%, 0.2);
+}
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  h2 {
+    @apply text-3xl font-medium text-neutral-blue-950;
+  }
+  h3 {
+    @apply font-medium text-2xl text-neutral-blue-950;
+  }
+  body {
+    @apply font-rubik-sans text-lg min-h-screen;
+  }
+  main {
+    @apply flex justify-center;
+  }
+  .main-content {
+    @apply flex flex-col w-full max-w-6xl px-4 md:px-6 lg:px-12;
+  }
+  footer {
+    @apply w-full;
+  }
+
+  .download-container .card {
+    @apply flex flex-col items-center justify-center p-4 gap-4 rounded-md shadow-[0px_10px_20px_-5px_hsla(231,_58%,_55%,_0.05)] w-full text-center;
+  }
+}
